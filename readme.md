@@ -1,13 +1,13 @@
 
 # 说明文档
-## `coderwhy`: 一个帮助你快速搭建和开发前端项目的CLI
+## `shbwhy-cli`: 一个帮助你快速搭建和开发前端项目的CLI
 
 > 想不起来其他名字，以这个命名吧~
 
 如何安装？
 
 ```shell
-npm install coderwhy -g
+npm install shbwhy -g
 ```
 
 ## 创建项目
@@ -25,7 +25,7 @@ vue项目模块已经帮你配置：
 创建项目
 
 ```shell
-coderwhy create your_project_name
+shbwhy create your_project_name
 ```
 
 自动拉取项目模板、安装项目依赖、打开浏览器 `http://localhost:8080/`、自动启动项目
@@ -45,8 +45,8 @@ coderwhy create your_project_name
 ### 创建Vue组件：
 
 ````shell
-coderwhy addcpn YourComponentName # 例如coderwhy add NavBar，默认会存放到src/components文件夹中
-coderwhy addcpn YourComponentName -d src/pages/home # 也可以指定存放的具体文件夹
+shbwhy addcpn YourComponentName # 例如shbwhy add NavBar，默认会存放到src/components文件夹中
+shbwhy addcpn YourComponentName -d src/pages/home # 也可以指定存放的具体文件夹
 ````
 
 
@@ -54,8 +54,8 @@ coderwhy addcpn YourComponentName -d src/pages/home # 也可以指定存放的�
 ### 创建Vue页面，并配置路由
 
 ```shell
-coderwhy addpage YourPageName # 例如coderwhy addpage Home，默认会放到src/pages/home/Home.vue中，并且会创建src/page/home/router.js
-coderwhy addpage YourPageName -d src/views # 也可以指定文件夹，但需要手动集成路由
+shbwhy addpage YourPageName # 例如shbwhy addpage Home，默认会放到src/pages/home/Home.vue中，并且会创建src/page/home/router.js
+shbwhy addpage YourPageName -d src/views # 也可以指定文件夹，但需要手动集成路由
 ```
 
 为什么会创建router.js文件：
@@ -79,8 +79,8 @@ const routes = files.keys().map(key => {
 ### 创建Vuex子模块
 
 ```shell
-coderwhy addstore YourVuexChildModuleName # 例如coderwhy addstore home，默认会放到src/store/modules/home/index.js和types.js
-coderwhy addstore YourVuexChildModuleName -d src/vuex/modules # 也可以指定文件夹
+shbwhy addstore YourVuexChildModuleName # 例如shbwhy addstore home，默认会放到src/store/modules/home/index.js和types.js
+shbwhy addstore YourVuexChildModuleName -d src/vuex/modules # 也可以指定文件夹
 ```
 
 创建完成后，不需要手动配置，已经动态将所有子模块集成进去：
@@ -108,14 +108,14 @@ files.keys().filter(key => {
 
 # Documentation
 
-## `coderwhy`: A CLI to help you quickly build and develop front-end projects
+## `shbwhy-cli`: A CLI to help you quickly build and develop front-end projects
 
-> Can't think of other names, so just use coderwhy~
+> Can't think of other names, so just use shbwhy~
 
 How to install？
 
 ```shell
-npm install coderwhy -g
+npm install shbwhy -g
 ```
 
 ## Create project
@@ -133,7 +133,7 @@ The vue project module has been configured for you:
 Create project
 
 ```shell
-coderwhy create your_project_name
+shbwhy create your_project_name
 ```
 
 Automatically pull project templates, install project dependencies, open browsers, `http://localhost:8080/`and automatically start projects
@@ -149,15 +149,15 @@ Project development currently provides three functions:
 ### Create Vue components:
 
 ```shell
-addcpn YourComponentName coderwhy # example coderwhy add NavBar, the default will be stored in src / components folder 
-coderwhy addcpn YourComponentName -d src / Pages and the / Home # specific file can also specify the destination folder
+addcpn YourComponentName shbwhy # example shbwhy add NavBar, the default will be stored in src / components folder 
+shbwhy addcpn YourComponentName -d src / Pages and the / Home # specific file can also specify the destination folder
 ```
 
 ### Create a Vue page and configure routing
 
 ```shell
-addPage YourPageName coderwhy # example coderwhy addpage Home, the default will put src / pages / home / Home.vue, and will create a src / Page / Home / router.js 
-coderwhy addPage YourPageName -d src / views # You can also specify a folder , But need to integrate routing manually
+addPage YourPageName shbwhy # example shbwhy addpage Home, the default will put src / pages / home / Home.vue, and will create a src / Page / Home / router.js 
+shbwhy addPage YourPageName -d src / views # You can also specify a folder , But need to integrate routing manually
 ```
 
 Why is the router.js file created:
@@ -179,8 +179,8 @@ const  routes  =  files . Keys ( ) . Map ( key  =>  {
 ### Create Vuex submodule
 
 ```shell
-addstore YourVuexChildModuleName coderwhy # example coderwhy addstore home, the default will put src / store / modules / home / index.js and types.js 
-coderwhy addstore YourVuexChildModuleName -d src / vuex / modules # You can also specify a folder
+addstore YourVuexChildModuleName shbwhy # example shbwhy addstore home, the default will put src / store / modules / home / index.js and types.js 
+shbwhy addstore YourVuexChildModuleName -d src / vuex / modules # You can also specify a folder
 ```
 
 After the creation is completed, no manual configuration is required, and all sub-modules have been dynamically integrated:
